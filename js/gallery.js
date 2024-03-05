@@ -89,9 +89,7 @@ function createMarkup(arr) {
 }
 
 function handleModalOpen(event) {
-  if (event.currentTarget === event.target) {
-    return;
-  }
+  if (event.currentTarget === event.target) return;
   event.preventDefault();
   const source = event.target.dataset.sourсe;
   const instance = basicLightbox.create(
